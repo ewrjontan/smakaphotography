@@ -22,5 +22,12 @@ $(document).ready(function(){
     }
     
   });
-      
+  
+  $("#see-pricing-button").hover(
+  function() {
+    $(this).css({"background-color": "#ffff99", "color": "#333333"});
+  }, function() {
+    $(this).css({"background-color": "#333333", "color": "#ffff99"});
+  }
+);
 })
