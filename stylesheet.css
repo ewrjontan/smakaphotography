@@ -1,3 +1,4 @@
+/*<link href='https://fonts.googleapis.com/css?family=Great+Vibes' rel='stylesheet' type='text/css'>*/
 
 @font-face {
   font-family: 'Great Vibes';
@@ -140,13 +141,32 @@ a:hover{
   font-size: 2em;
   max-width: 600px;
   margin-top: -20px;
-  padding-bottom: 25px;
+  margin-bottom: 25px;
+  background-color: none;
 }
 
 .service-item{
   background-color: none;
   width: 250px;
   text-align: center;
+}
+
+#see-pricing-button-container{
+  background-color: none;
+  width: 100%;
+  height: 100px;
+}
+
+#see-pricing-button{
+  width: 200px;
+  height: 50px;
+  background-color: #333333;
+  margin: auto;
+  text-align: center;
+  border: 3px solid #ffff99;
+  color: #ffff99;
+  cursor: pointer;
+  //margin-bottom: 50px;
 }
 
 footer{
