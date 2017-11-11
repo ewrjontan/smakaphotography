@@ -97,7 +97,7 @@ a:hover{
 }
 
 #about-paragraph{
-  max-width: 600px;
+  max-width: 800px;
   margin-top: -20px;
   margin-left: auto;
   margin-right: auto;
@@ -139,7 +139,7 @@ a:hover{
   margin: auto;
   //font-family: 'Great Vibes';
   font-size: 2em;
-  max-width: 600px;
+  max-width: 800px;
   margin-top: -20px;
   margin-bottom: 25px;
   background-color: none;
