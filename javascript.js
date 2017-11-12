@@ -1,3 +1,4 @@
+
 $(document).ready(function(){
 
 	$(window).scroll(function(){
@@ -24,10 +25,19 @@ $(document).ready(function(){
   });
   
   $("#see-pricing-button").hover(
-  function() {
-    $(this).css({"background-color": "#ffff99", "color": "#333333"});
-  }, function() {
-    $(this).css({"background-color": "#333333", "color": "#ffff99"});
-  }
-);
+  	function() {
+    	$(this).css({"background-color": "#bfbfbf", "color": "white"});
+  	}, function() {
+    	$(this).css({"background-color": "white", "color": "#cca300"});
+  	}
+	);
+  
+  $(".fa").hover(
+  	function() {
+    	$(this).css("color", "white");
+  	}, function() {
+    	$(this).css("color", "black");
+  	}
+	);  
+  
 })
