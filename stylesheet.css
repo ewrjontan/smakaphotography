@@ -22,6 +22,7 @@ a:link{
 
 a:visited{
   color: black;
+  //color: #cca300;
 }
 
 a:hover{
@@ -38,6 +39,7 @@ a:hover{
   width: 100%;
   height: 40px;
   z-index: 1;
+  //opacity: .5;
 }
 
 #logo-container{
@@ -77,37 +79,148 @@ a:hover{
   top: 10px;
 }
 
-#home-photo{
+/*#home-photo{
   width: 100%;
   position: relative;
-}
+}*/
 
-#about-container{
-  background-color: white;
+#home-container-one{
+  //background-color: white;
   position: relative;
-  top:0;
-  margin-top: -35px;
+  top: 0;
+  width: 100%;
 }
 
-#about-me-header{
+
+#home-image-one{
+  width: 100%;
+}
+
+#capture-the-moment-container{
+  background-color:rgba(255,255,255, .7);
+  margin: auto;
+  min-width: 600px;
+  width: 75%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  height: 25%;
+  min-height: 200px;
+  //height: 400px;
+  left: 0; 
+  right: 0; 
+  margin-left: auto; 
+  margin-right: auto; 
+  //width: 100px; /* Need a specific value to work */
+  //margin-bottom: -50px;
+}
+
+#ctm-header-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  //padding-top: 25px;
+}
+
+.HeaderLine{
+  width: 15%;
+  height: 2px;
+  background-color: #cca300;
+  position: relative;
+}
+
+#header-line-ctm{
+  top: 55px;  
+}
+
+#ctm-header{
   font-family: "Great Vibes";
   font-size: 3em;
   text-align: center;
-  padding-top: 25px;
   color: #cca300;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
-#about-paragraph{
-  max-width: 800px;
-  margin-top: -20px;
+#ctm-paragraph{
+  /*max-width: 800px;
+  //margin-top: -20px;
+  position: relative;
+  top: -20px;
   margin-left: auto;
   margin-right: auto;
-  padding-bottom: 25px;
+  padding-bottom: 25px;*/
+  
+  position: relative;
+  top: -25px;
   padding-left: 15px;
   padding-right: 15px;
   color: black;
 }
 
+#home-container-two{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  background-color: white;
+}
+
+#about-image-container{
+  width: 50%;
+  position: relative;
+}
+
+#about-image{
+  width: 80%;
+  height: 80%;
+  border-radius: 25px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  //z-index: 2;
+}
+
+#about-container{
+  width: 50%;
+  background-color: none;
+}
+
+#about-header-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+  background-color: none;
+  padding-top: 100px;
+}
+
+#header-line-about{
+  top:20px;
+}
+
+#about-header{
+  font-family: "Great Vibes";
+  font-size: 2.5em;
+  text-align: center;
+  color: #cca300;
+  padding-left: 15px;
+  padding-right: 15px;
+  position: relative;
+}
+
+#about-text{
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-bottom: 100px;
+}
+
+
+
+/*
 #home-photo-two{
   //width: 100%;
   position: fixed;
@@ -168,15 +281,18 @@ a:hover{
   background-color: white;
   margin: auto;
   text-align: center;
-  border: 3px solid #bfbfbf;
-  color: #cca300;
+  //border: 3px solid #bfbfbf;
+  //color: #cca300;
+  border: 3px solid #85AEC0;
+  color: #85AEC0;
   cursor: pointer;
   //margin-bottom: 50px;
-}
+}*/
 
 footer{
   position: relative;
-  top: 200px;
+  top: 0;
+  //top: 0;
   //bottom: 0px;
   //height: 25px;
   width: 100%;
