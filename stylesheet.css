@@ -11,7 +11,7 @@
 body{
   padding: 0;
   margin: 0;
-  background-color: none;
+  background-color: white;
   font-family: Verdana, Geneva, sans-serif;
 }
 
@@ -106,13 +106,10 @@ a:hover{
   bottom: 0;
   height: 25%;
   min-height: 200px;
-  //height: 400px;
   left: 0; 
   right: 0; 
   margin-left: auto; 
   margin-right: auto; 
-  //width: 100px; /* Need a specific value to work */
-  //margin-bottom: -50px;
 }
 
 #ctm-header-container{
@@ -120,6 +117,8 @@ a:hover{
   flex-direction: row;
   justify-content: center;
   //padding-top: 25px;
+  width: 100%;
+  margin: auto;
 }
 
 .HeaderLine{
@@ -156,6 +155,8 @@ a:hover{
   padding-left: 15px;
   padding-right: 15px;
   color: black;
+  width: 85%;
+  margin: auto;
 }
 
 #home-container-two{
@@ -195,7 +196,7 @@ a:hover{
   justify-content: center;
   width: 100%;
   background-color: none;
-  padding-top: 100px;
+  padding-top: 125px;
 }
 
 #header-line-about{
@@ -213,9 +214,11 @@ a:hover{
 }
 
 #about-text{
-  padding-left: 25px;
-  padding-right: 25px;
-  padding-bottom: 100px;
+  //padding-left: 25px;
+  //padding-right: 25px;
+  padding-bottom: 125px;
+  width: 80%;
+  margin: auto;
 }
 
 
@@ -316,3 +319,89 @@ footer{
 #copyright-text{
   padding-bottom: 15px;
 }
+
+/*xxxxxxxxxxxxxxxxxxx responsive design xxxxxxxxxxxxxxxxxxxxxx*/
+
+@media only screen and (max-width : 667px) /*and (orientation : portrait)*/{
+  
+  #capture-the-moment-container{
+    //background-color: #ffe6e6; 
+    //background-color:rgba(255, 230, 230, 1);
+    background-color:rgba(255, 255, 255, 1);
+    min-width: 200px;
+    width:100%;
+    position: relative;
+    //top: 0;
+    margin-top: -3px;
+  }
+  
+  #ctm-header-container{
+    padding-top: 75px;
+  }
+  
+  #ctm-paragraph{
+    padding-bottom: 75px;
+  }
+  
+  #home-container-two{
+    flex-direction: column;
+  }
+
+  #about-image-container{
+    width: 100%;
+    position: relative;
+  }
+
+  #about-image{
+    width: 100%;
+    height: 100%;
+    border-radius: 0;
+    position: relative;
+  }
+
+  #about-container{
+    width: 100%;
+    background-color: none;
+    position: relative;
+    margin-top: -3px;
+  }
+  
+  #about-header-container{
+    padding-top: 75px;
+  }
+  
+  #about-header{
+    font-size: 3em;
+  }
+  
+  #header-line-about{
+    top: 25px;
+  }
+  
+  #about-text{
+    padding-bottom: 75px;
+  }
+}
+
+@media only screen and (max-width: 550px){
+  #ctm-header-container{
+    width: 90%;
+  }
+  
+  #header-line-ctm{
+    top: 85px;  
+  } 
+  
+  #ctm-header{
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+}
+
+@media only screen and (max-width : 667px) and (orientation : portrait){
+  /*#about-container{
+    background-color: green;
+  } */   
+}
+
+@media only screen and (max-device-width : 667px) and (orientation : landscape){}
