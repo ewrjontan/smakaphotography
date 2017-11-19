@@ -1,6 +1,7 @@
 
 $(document).ready(function(){
-
+	var $mobileMenuOpen = false;
+  
 	$(window).scroll(function(){
   	var $scroll = $(window).scrollTop();
     console.log($scroll);
@@ -9,7 +10,7 @@ $(document).ready(function(){
     	console.log("yoooo");
       $("#navigation").css("position", "fixed");
       $("#nav-list").css("top", "5px");
-      $("#logo-small").css("display", "inline");
+      $("#logo-small-desktop").css("display", "inline");
      	$("#logo-container").css("margin-bottom", "40px");
      
       /*$("#home-photo").css("top", "40px");
@@ -18,11 +19,21 @@ $(document).ready(function(){
     }else if ($scroll<220){
     	$("#navigation").css("position", "relative");
       $("#nav-list").css("top", "10px");
-      $("#logo-small").css("display", "none");
+      $("#logo-small-desktop").css("display", "none");
       $("#logo-container").css("margin-bottom", "0px");
-    }
-    
+    }  
   });
+  
+  $("#mobile-nav-button").click(function(){
+  	if ($mobileMenuOpen){
+    	$('#mobile-menu-container').slideUp('slow');
+      $mobileMenuOpen = false;
+    }else{
+    	$('#mobile-menu-container').slideDown('slow');
+      $mobileMenuOpen = true;
+    }
+  	
+  })
   
   $("#see-pricing-button").hover(
   	function() {
