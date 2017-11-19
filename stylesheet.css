@@ -15,6 +15,12 @@ body{
   font-family: Verdana, Geneva, sans-serif;
 }
 
+.fa{
+  cursor: pointer;
+}
+
+
+
 a:link{
   color: black;
   text-decoration: none;
@@ -48,24 +54,64 @@ a:hover{
   height: 220px;
 }
 
-#logo{
-  width: 200px;
-  height: 200px;
+#logo-link-container{
   margin-left: auto;
   margin-right: auto;
   display: block;
-  //margin-bottom: 50px;
   top: 15px;
+  position: relative; 
+  width: 200px;
+  height: 200px;
+}
+
+#logo{
+  width: 200px;
+  height: 200px;
+}
+
+#logo-small-desktop{
+  display: none;
   position: relative;
 }
 
-#logo-small{
+.logo-small{
   width: 30px;
   height: 30px;
-  position: relative;
-  display: none;
-  
 }
+
+#nav-container-mobile{
+  display: none;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 95%;
+  margin: auto;
+  position: relative;
+  top: 5px;
+}
+
+#mobile-menu-container{
+  background-color: white;
+  width: 100%;
+  position: relative;
+  margin-top: -16px;
+  display: none;
+}
+
+#mobile-menu-item-container{
+  list-style-type: none;
+  padding: 0;
+  text-align: center;
+}
+
+.mobile-menu-item{
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+#mobile-menu-item, a:hover{
+  text-decoration: none;
+}
+
 #nav-list{
   display: flex;
   flex-direction: row;
@@ -77,6 +123,7 @@ a:hover{
   //margin-bottom: 10px;
   position: relative;
   top: 10px;
+  background-color: none;
 }
 
 /*#home-photo{
@@ -221,77 +268,6 @@ a:hover{
   margin: auto;
 }
 
-
-
-/*
-#home-photo-two{
-  //width: 100%;
-  position: fixed;
-  bottom: 0;
-  z-index: -2;
-}
-
-#services-container{
-  //background-color: #333333;
-  background-color: white;
-  //height: 400px;
-  position: relative;
-  top: 200px;
-  //top: 0;
-  color: black;
-}
-
-#services-header{
-  font-family: "Great Vibes";
-  font-size: 3em;
-  text-align: center;
-  padding-top: 25px;
-  color: #cca300;
-}
-
-#service-items{
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  flex-wrap: wrap;
-  align-items: center;
-  margin: auto;
-  //font-family: 'Great Vibes';
-  font-size: 2em;
-  max-width: 800px;
-  margin-top: -20px;
-  margin-bottom: 25px;
-  background-color: none;
-}
-
-.service-item{
-  background-color: none;
-  width: 250px;
-  height: 50px;
-  text-align: center;
-  color: #bfbfbf;
-}
-
-#see-pricing-button-container{
-  background-color: white;
-  width: 100%;
-  height: 100px;
-}
-
-#see-pricing-button{
-  width: 200px;
-  height: 50px;
-  background-color: white;
-  margin: auto;
-  text-align: center;
-  //border: 3px solid #bfbfbf;
-  //color: #cca300;
-  border: 3px solid #85AEC0;
-  color: #85AEC0;
-  cursor: pointer;
-  //margin-bottom: 50px;
-}*/
-
 footer{
   position: relative;
   top: 0;
@@ -324,8 +300,12 @@ footer{
 
 @media only screen and (max-width : 667px) /*and (orientation : portrait)*/{
   
+  #home-container-one{
+    margin-top: -16px;
+  }
+  
   #capture-the-moment-container{
-    //background-color: #ffe6e6; 
+    //background-color:red; 
     //background-color:rgba(255, 230, 230, 1);
     background-color:rgba(255, 255, 255, 1);
     min-width: 200px;
@@ -336,11 +316,11 @@ footer{
   }
   
   #ctm-header-container{
-    padding-top: 75px;
+    padding-top: 50px;
   }
   
   #ctm-paragraph{
-    padding-bottom: 75px;
+    padding-bottom: 50px;
   }
   
   #home-container-two{
@@ -402,6 +382,14 @@ footer{
   /*#about-container{
     background-color: green;
   } */   
+  
+  #nav-list{
+    display: none;
+  }
+  
+  #nav-container-mobile{
+    display: flex;
+  }
 }
 
 @media only screen and (max-device-width : 667px) and (orientation : landscape){}
