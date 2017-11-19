@@ -10,7 +10,7 @@ $(document).ready(function(){
       $("#navigation").css("position", "fixed");
       $("#nav-list").css("top", "5px");
       $("#logo-small").css("display", "inline");
-     	$("#logo").css("margin-bottom", "40px");
+     	$("#logo-container").css("margin-bottom", "40px");
      
       /*$("#home-photo").css("top", "40px");
       $("#services-container").css("top", "37px");
@@ -19,7 +19,7 @@ $(document).ready(function(){
     	$("#navigation").css("position", "relative");
       $("#nav-list").css("top", "10px");
       $("#logo-small").css("display", "none");
-      $("#logo").css("margin-bottom", "0px");
+      $("#logo-container").css("margin-bottom", "0px");
     }
     
   });
