@@ -124,7 +124,7 @@ a:hover{
   display: none;
   z-index: 2;
   height: 220px;
-  //border-bottom: 1px solid black;
+  box-shadow: inset 0px 0px 8px 2px #bfbfbf;
 }
 
 #mobile-menu-item-container{
@@ -138,6 +138,8 @@ a:hover{
 .mobile-menu-item{
   padding-top: 10px;
   padding-bottom: 10px;
+  width: 95%;
+  margin: auto;
 }
 
 /*#contact-mobile-item{
