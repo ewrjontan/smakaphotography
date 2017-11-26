@@ -11,10 +11,12 @@ $(document).ready(function(){
     	$menuLock = true;
     	console.log("yoooo");
       $("#navigation").css("position", "fixed");
+      
       $("#nav-list").css("top", "5px");
       $("#logo-small-desktop").css("display", "inline");
      	$("#logo-container").css("margin-bottom", "40px");
-      $("#mobile-nav-header").css("visibility", "visible");
+      //$("#mobile-nav-header").css("visibility", "visible");
+      $("#mobile-nav-header").css("opacity", "1");
      
       /*$("#home-photo").css("top", "40px");
       $("#services-container").css("top", "37px");
@@ -22,12 +24,14 @@ $(document).ready(function(){
     }else if ($scroll<220){
     	$menuLock = false;
     	$("#navigation").css("position", "relative");
+      
       $("#nav-list").css("top", "10px");
       $("#logo-small-desktop").css("display", "none");
       $("#logo-container").css("margin-bottom", "0px");
       
       if ($mobileMenuOpen == false){
-      	$("#mobile-nav-header").css("visibility", "hidden");
+      	//$("#mobile-nav-header").css("visibility", "hidden");
+        $("#mobile-nav-header").css("opacity", "0");
       };
     }  
   });
@@ -38,14 +42,16 @@ $(document).ready(function(){
       $("#logo-link-container").css("visibility", "visible");
       
       if ($menuLock == false){
-      	$("#mobile-nav-header").css("visibility", "hidden");
+      	$("#mobile-nav-header").css("opacity", "0");
+        //$("#mobile-nav-header").css("visibility", "hidden");
       };
       
       $mobileMenuOpen = false;
     }else{
     	$('#mobile-menu-container').slideDown('slow');
       $("#logo-link-container").css("visibility", "hidden");
-      $("#mobile-nav-header").css("visibility", "visible");
+      //$("#mobile-nav-header").css("visibility", "visible");
+      $("#mobile-nav-header").css("opacity", "1");
       $mobileMenuOpen = true;
     }
   	
