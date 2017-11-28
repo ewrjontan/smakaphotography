@@ -12,6 +12,11 @@ $(document).ready(function(){
     $landscape = window.matchMedia("(orientation: landscape)").matches;
     console.log("Portrait: " + $portrait);
     console.log("Landscape: " + $landscape);
+    
+    //temp fix for landscape to portrait (position media query not changing)
+    if ($portrait){
+    	$("#navigation").css("position", "fixed");
+    }
     /*if($(window).width() <= 667) {
     	console.log("Yo width is less than or equal to 667!");
     } else {
@@ -32,7 +37,9 @@ $(document).ready(function(){
       	$("#navigation").css("position", "fixed");
         $("#nav-list").css("top", "3px");
       	$("#logo-small-desktop").css("display", "inline");
-     		$("#logo-container").css("margin-bottom", "40px");
+     		//$("#logo-container").css("margin-bottom", "40px");
+        //$("#logo-container").css("margin-bottom", "40px");
+        $("#home-container-one").css("top", "40px");
       };
       
       //$("#mobile-nav-header").css("visibility", "visible");
@@ -46,7 +53,8 @@ $(document).ready(function(){
       	$("#navigation").css("position", "relative");
       	$("#nav-list").css("top", "10px");
       	$("#logo-small-desktop").css("display", "none");
-      	$("#logo-container").css("margin-bottom", "0px");
+      	//$("#logo-container").css("margin-bottom", "0px");
+        $("#home-container-one").css("top", "0px");
       }
     	
       
