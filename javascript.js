@@ -1,7 +1,23 @@
-
 $(document).ready(function(){
 	var $mobileMenuOpen = false;
   var $menuLock = false;
+  var $portrait;
+  var $landscape;
+  
+  //check window size
+  $(window).resize(function() {
+  	// This will fire each time the window is resized:
+    console.log($(window).width());
+   	$portrait = window.matchMedia("(orientation: portrait)").matches;
+    $landscape = window.matchMedia("(orientation: landscape)").matches;
+    console.log("Portrait: " + $portrait);
+    console.log("Landscape: " + $landscape);
+    /*if($(window).width() <= 667) {
+    	console.log("Yo width is less than or equal to 667!");
+    } else {
+      console.log("Width is greater than 667!");
+    }*/
+  }).resize(); // This will simulate a resize to trigger the initial run.
   
 	$(window).scroll(function(){
   	var $scroll = $(window).scrollTop();
@@ -10,24 +26,29 @@ $(document).ready(function(){
     if ($scroll >= 220){
     	$menuLock = true;
     	console.log("yoooo");
-      $("#navigation").css("position", "fixed");
       
-      $("#nav-list").css("top", "5px");
-      $("#logo-small-desktop").css("display", "inline");
-     	$("#logo-container").css("margin-bottom", "40px");
+      //for oreintaion = landscape
+      if ($landscape){
+      	$("#navigation").css("position", "fixed");
+        $("#nav-list").css("top", "3px");
+      	$("#logo-small-desktop").css("display", "inline");
+     		$("#logo-container").css("margin-bottom", "40px");
+      };
+      
       //$("#mobile-nav-header").css("visibility", "visible");
       $("#mobile-nav-header").css("opacity", "1");
-     
-      /*$("#home-photo").css("top", "40px");
-      $("#services-container").css("top", "37px");
-      $("#about-container").css("top", "-3px");*/
+
     }else if ($scroll<220){
     	$menuLock = false;
-    	$("#navigation").css("position", "relative");
       
-      $("#nav-list").css("top", "10px");
-      $("#logo-small-desktop").css("display", "none");
-      $("#logo-container").css("margin-bottom", "0px");
+      //for orientation = landscape
+      if ($landscape){
+      	$("#navigation").css("position", "relative");
+      	$("#nav-list").css("top", "10px");
+      	$("#logo-small-desktop").css("display", "none");
+      	$("#logo-container").css("margin-bottom", "0px");
+      }
+    	
       
       if ($mobileMenuOpen == false){
       	//$("#mobile-nav-header").css("visibility", "hidden");
