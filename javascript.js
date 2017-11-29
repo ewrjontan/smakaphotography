@@ -104,7 +104,7 @@ $(document).ready(function(){
   
   $(".mobile-menu-item").hover(
   	function(){
-    	$(this).css("backgroundColor", "#8BB2C0");
+    	$(this).css("backgroundColor", "#ccfff5");
     }, function(){
       $(this).css("backgroundColor", "white");
     }
