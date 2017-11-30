@@ -404,7 +404,7 @@ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 }
 
 #portfolio-image-one{
-  background-image: url("images/IMG_0001.jpg");
+  background-image: url("./images/IMG_0001.jpg");
 }
 
 #portfolio-image-two{
