@@ -182,10 +182,10 @@ a:hover{
   background-color: none;
 }
 
-/*#home-photo{
-  width: 100%;
-  position: relative;
-}*/
+/*xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Home
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx*/
+
 
 #home-container-one{
   background-color: white;
@@ -330,6 +330,10 @@ a:hover{
   background-color: none;
 }
 
+/*xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Footer
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx*/
+
 footer{
   position: relative;
   top: 0;
@@ -358,6 +362,97 @@ footer{
   padding-bottom: 15px;
 }
 
+
+/*xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Portfolio
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx*/
+#portfolio-container-one{
+  background-color: red;
+  width: 100%;
+}
+
+
+#portfolio-image-flex{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  flex-wrap: wrap;
+  jusify-content: space-between;
+  margin: auto;
+  //background-color: red;
+}
+
+/*.portfolio-image-flex{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  max-height: 400px;
+  height: 100%;
+  background-color: red;
+}*/
+
+.portfolio-image{
+  background-color: blue;
+  height: 300px;
+  width: 300px;
+  //border: 1px solid black;
+  flex-grow: 1;
+  flex-shrink: 1;
+  background-repeat: no-repeat;
+  background-position:center;
+  background-size: cover;
+}
+
+#portfolio-image-one{
+  background-image: url("/images/IMG_0001.jpg");
+}
+
+#portfolio-image-two{
+  background-image: url("/images/IMG_0002.jpg");
+}
+
+#portfolio-image-three{
+  background-image: url("/images/IMG_0003.jpg");
+}
+
+#portfolio-image-four{
+  background-image: url("/images/IMG_0004.jpg");
+}
+
+#portfolio-image-five{
+  background-image: url("/images/IMG_0005.jpg");
+}
+
+#portfolio-image-six{
+  background-image: url("/images/IMG_0006.jpg");
+}
+
+#portfolio-image-seven{
+  background-image: url("/images/IMG_0007.jpg");
+}
+
+#portfolio-image-eight{
+  background-image: url("/images/IMG_0008.jpg");
+}
+
+#portfolio-image-nine{
+  background-image: url("/images/IMG_0009.jpg");
+}
+
+#portfolio-image-ten{
+  background-image: url("/images/IMG_0010.jpg");
+}
+
+#portfolio-image-eleven{
+  background-image: url("/images/IMG_0011.jpg");
+}
+
+#portfolio-image-twelve{
+  background-image: url("/images/IMG_0012.jpg");
+}
+
+/*xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx*/
 /*xxxxxxxxxxxxxxxxxxx responsive design xxxxxxxxxxxxxxxxxxxxxx*/
 
 @media only screen and (max-width : 667px) /*and (orientation : portrait)*/{
