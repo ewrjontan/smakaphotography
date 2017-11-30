@@ -207,7 +207,7 @@ a:hover{
   top: 0;
   bottom: 0;
   height: 25%;
-  min-height: 200px;
+  min-height: 225px;
   left: 0; 
   right: 0; 
   margin-left: auto; 
@@ -223,7 +223,7 @@ a:hover{
   //top: 25px;
   width: 100%;
   margin: auto;
-  padding-bottom: 0px;
+  padding-bottom: 10px;
 }
 
 .HeaderLine{
@@ -270,11 +270,13 @@ a:hover{
   flex-direction: row;
   position: relative;
   background-color: white;
+  top: 37px;
 }
 
 #about-image-container{
   width: 50%;
   position: relative;
+  background-color: white;
 }
 
 #about-image{
@@ -283,7 +285,7 @@ a:hover{
   border-radius: 25px;
   position: absolute;
   top: 0;
-  bottom: 0;
+  bottom: 35px;
   left: 0;
   right: 0;
   margin: auto;
@@ -292,7 +294,7 @@ a:hover{
 
 #about-container{
   width: 50%;
-  background-color: none;
+  background-color: white;
 }
 
 #about-header-container{
@@ -302,6 +304,7 @@ a:hover{
   width: 100%;
   background-color: none;
   padding-top: 125px;
+  padding-bottom: 25px;
 }
 
 #header-line-about{
@@ -324,6 +327,7 @@ a:hover{
   padding-bottom: 125px;
   width: 80%;
   margin: auto;
+  background-color: none;
 }
 
 footer{
@@ -379,7 +383,7 @@ footer{
   }
   
   #ctm-paragraph{
-    padding-bottom: 50px;
+    padding-bottom: 75px;
     //background-color: green;
   }
   
@@ -416,7 +420,7 @@ footer{
   }
   
   #about-text{
-    padding-bottom: 75px;
+    padding-bottom: 125px;
   }
 }
 
