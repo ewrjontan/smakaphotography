@@ -573,11 +573,11 @@ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
   }
   
   .fa:hover{
-    color: black;
+    color: red;
   }
   
   .mobile-menu-item:hover{
-    background-color: black;
+    background-color: none;
   }
   
 }
