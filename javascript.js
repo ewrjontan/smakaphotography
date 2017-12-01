@@ -15,7 +15,8 @@ $(document).ready(function(){
     
     //temp fix for landscape to portrait (position media query not changing)
     if ($portrait){
-    	$("#navigation").css("position", "fixed");
+    	$("#navigation").css({"position": "fixed", "background-color": "rgba(255, 230, 230, 0)"});
+      
     }
     
     //fix for nav bar not changing color when switching between portrait and landscape
