@@ -21,7 +21,7 @@ $(document).ready(function(){
     
     //fix for nav bar not changing color when switching between portrait and landscape
     if ($landscape){
-    	$("#navigation").css("background-color", "#ffe6e6");
+    	$("#navigation").css({"position": "relative","background-color": "#ffe6e6"});
     }
     /*if($(window).width() <= 667) {
     	console.log("Yo width is less than or equal to 667!");
