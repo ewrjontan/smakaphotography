@@ -40,7 +40,9 @@ $(document).ready(function(){
      		//$("#logo-container").css("margin-bottom", "40px");
         //$("#logo-container").css("margin-bottom", "40px");
         $("#home-container-one").css("top", "40px");
-      };
+      }else if ($portrait){
+      	$("#navigation").css("background-color", "rgba(255, 230, 230, 1)");
+      }
       
       //$("#mobile-nav-header").css("visibility", "visible");
       $("#mobile-nav-header").css("opacity", "1");
@@ -61,6 +63,10 @@ $(document).ready(function(){
       if ($mobileMenuOpen == false){
       	//$("#mobile-nav-header").css("visibility", "hidden");
         $("#mobile-nav-header").css("opacity", "0");
+        
+        if ($portrait){
+      		$("#navigation").css("background-color", "rgba(255, 230, 230, 0)");
+      	};
       };
     }  
   });
@@ -70,23 +76,26 @@ $(document).ready(function(){
     	$('#mobile-menu-container').slideUp('slow');
       $("#logo-link-container").css("visibility", "visible");
       
+      
       if ($menuLock == false){
       	$("#mobile-nav-header").css("opacity", "0");
+        $("#navigation").css("background-color", "rgba(255, 230, 230, 0)");
         //$("#mobile-nav-header").css("visibility", "hidden");
       };
       
       $mobileMenuOpen = false;
-    }else{
+    }else{//mobile menu is closed
     	$('#mobile-menu-container').slideDown('slow');
       $("#logo-link-container").css("visibility", "hidden");
       //$("#mobile-nav-header").css("visibility", "visible");
       $("#mobile-nav-header").css("opacity", "1");
+      $("#navigation").css("background-color", "rgba(255, 230, 230, 1)");
       $mobileMenuOpen = true;
     }
   	
   })
   
-  $("#see-pricing-button").hover(
+  /*$("#see-pricing-button").hover(
   	function() {
     	$(this).css({"background-color": "#bfbfbf", "color": "white"});
   	}, function() {
@@ -108,6 +117,6 @@ $(document).ready(function(){
     }, function(){
       $(this).css("backgroundColor", "white");
     }
-  );
+  );*/
   
 })
