@@ -451,6 +451,97 @@ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
   background-image: url("./images/IMG_0012.jpg");
 }
 
+
+/*xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Pricing
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx*/
+
+#pricing-container-one{
+  width: 100%;
+  //width: 500px;
+  background-image: url("https://i.imgur.com/gMGRUsl.jpg");
+  background-repeat: no-repeat;
+  background-position:center;
+  background-size: cover;
+  position: relative;
+  //height: 500px;
+  top: 0;
+}
+
+/*#pricing-background-image-container{
+  width: 100%;
+}
+
+#pricing-background-image{
+  width: 100%;
+}*/
+
+#packages-main-container{
+  position: relative;
+  width: 75%;
+  height: 100%;
+  background-color:rgba(255,255,255, .7);
+  top: 100px;
+  bottom: 0;
+  left:0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+#pricing-header-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: center; 
+  padding-top: 50px;
+}
+#header-line-packages{
+  position: relative;
+  top: 25px;
+}
+
+#pricing-header{
+  font-family: "Great Vibes";
+  color: #cca300;
+  font-size: 3em; 
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.PackageHeader{
+  font-family: "Great Vibes";
+  color: #cca300;
+  font-size: 2em; 
+  text-decoration: underline;
+}
+
+.PackageOptions{
+  list-style: none;
+  padding: 0;
+}
+
+.package-container{
+  background-color: none;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+#package-extras-container{
+  background-color: none;
+  //margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+#fine-print-container-one{
+  color: white;
+  width: 75%;
+  margin: auto;
+  background-color: none;
+  padding-bottom: 50px;
+  padding-top: 150px;
+}
+
 /*xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx*/
 /*xxxxxxxxxxxxxxxxxxx responsive design xxxxxxxxxxxxxxxxxxxxxx*/
