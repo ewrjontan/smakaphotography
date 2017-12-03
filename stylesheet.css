@@ -108,7 +108,7 @@ a:hover{
 }
 
 #mobile-nav-button:hover{
-  color: black;
+  color: green;
 }
 
 .mobile-header-placeholder{
@@ -578,6 +578,10 @@ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
   
   .mobile-menu-item:hover{
     background-color: none;
+  }
+  
+  #mobile-nav-button:hover{
+    color: red;
   }
   
 }
