@@ -1,5 +1,18 @@
+function hasTouch() {
+    return 'ontouchstart' in document.documentElement
+           || navigator.maxTouchPoints > 0
+           || navigator.msMaxTouchPoints > 0;
+}
+
+if (!hasTouch()) {
+    document.body.className += 'HasHover';
+    //console.log("yooooo");
+}
+
+
 $(document).ready(function(){
-	var $mobileMenuOpen = false;
+  console.log("Hello jquery");
+  var $mobileMenuOpen = false;
   var $menuLock = false;
   var $portrait;
   var $landscape;
@@ -22,6 +35,7 @@ $(document).ready(function(){
     //fix for nav bar not changing color when switching between portrait and landscape
     if ($landscape){
     	$("#navigation").css({"position": "relative","background-color": "#ffe6e6"});
+      
     }
     /*if($(window).width() <= 667) {
     	console.log("Yo width is less than or equal to 667!");
