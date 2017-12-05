@@ -5,7 +5,8 @@ function hasTouch() {
 }
 
 if (!hasTouch()) {
-    document.body.className += 'HasHover';
+    //document.body.className += 'HasHover';
+    document.body.classList.add("HasHover");
     //console.log("yooooo");
 }
 
