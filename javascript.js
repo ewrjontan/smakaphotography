@@ -1,19 +1,19 @@
+
 function hasTouch() {
     return 'ontouchstart' in document.documentElement
            || navigator.maxTouchPoints > 0
            || navigator.msMaxTouchPoints > 0;
 }
 
-if (!hasTouch()) {
-    //document.body.className += 'HasHover';
-    document.body.classList.add("HasHover");
-    //console.log("yooooo");
-}
-
-
 $(document).ready(function(){
-  console.log("Hello jquery");
-  var $mobileMenuOpen = false;
+	console.log("Hello jquery");
+  
+  if (!hasTouch()) {
+    $("body").addClass("HasHover");
+    //console.log("yooooo");
+	}
+  
+	var $mobileMenuOpen = false;
   var $menuLock = false;
   var $portrait;
   var $landscape;
