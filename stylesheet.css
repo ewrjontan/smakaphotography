@@ -19,7 +19,7 @@ body{
   cursor: pointer;
 }
 
-.fa:hover{
+body.HasHover .fa:hover{
   color: white;
 }
 
@@ -35,7 +35,7 @@ a:visited{
   //color: #cca300;
 }
 
-a:hover{
+body.HasHover a:hover{
   text-decoration: underline;
 }
 
@@ -108,7 +108,7 @@ a:hover{
 }
 
 #mobile-nav-button:hover{
-  color: green;
+  color: black;
 }
 
 .mobile-header-placeholder{
@@ -167,7 +167,7 @@ a:hover{
   //margin: auto;
 }
 
-.mobile-menu-item:hover{
+body.HasHover .mobile-menu-item:hover{
   background-color: #ccfff5;
 }
 
@@ -567,7 +567,7 @@ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 /*xxxxxxxxxxxxxxxxxxx responsive design xxxxxxxxxxxxxxxxxxxxxx*/
 
 //disable hover effects on touch device
-@media (hover: none) {
+/*@media (hover: none) {
   a:hover {
     text-decoration: none;
   }
@@ -585,7 +585,7 @@ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
     background-color: red;
   }
   
-}
+}*/
 
 @media only screen and (max-width : 667px) /*and (orientation : portrait)*/{
   
