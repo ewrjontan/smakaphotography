@@ -566,26 +566,6 @@ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx*/
 /*xxxxxxxxxxxxxxxxxxx responsive design xxxxxxxxxxxxxxxxxxxxxx*/
 
-//disable hover effects on touch device
-/*@media (hover: none) {
-  a:hover {
-    text-decoration: none;
-  }
-  
-  .fa:hover{
-    background-color: red;
-  }
-  
-  .mobile-menu-item:hover{
-    background-color: none;
-  }
-  
-  #mobile-nav-button:hover{
-    color: none;
-    background-color: red;
-  }
-  
-}*/
 
 @media only screen and (max-width : 667px) /*and (orientation : portrait)*/{
   
@@ -594,8 +574,6 @@ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
   }
   
   #capture-the-moment-container{
-    //background-color:red; 
-    //background-color:rgba(255, 230, 230, 1);
     background-color:rgba(255, 255, 255, 1);
     min-width: 200px;
     width:100%;
