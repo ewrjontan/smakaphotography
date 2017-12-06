@@ -292,7 +292,8 @@ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 }
 
 #about-image{
-  width: 80%;
+  max-width: 304px;
+  max-height: 456px;
   height: 80%;
   border-radius: 25px;
   position: absolute;
@@ -301,8 +302,24 @@ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
   left: 0;
   right: 0;
   margin: auto;
-  //z-index: 2;
+  background-image: url("https://i.imgur.com/I2g3fBO.jpg");
+  background-repeat: no-repeat;
+  background-position:center;
+  background-size: contain;
 }
+
+/*#about-image{
+  width: 90%;
+  //height: 80%;
+  border-radius: 25px;
+  position: absolute;
+  top: 0;
+  bottom: 35px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  //z-index: 2;
+}*/
 
 #about-container{
   width: 50%;
@@ -600,6 +617,7 @@ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
   #about-image-container{
     width: 100%;
     position: relative;
+    background-color: white;
   }
 
   #about-image{
@@ -607,6 +625,9 @@ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
     height: 100%;
     border-radius: 0;
     position: relative;
+    background-size: contain;
+    max-width: 1824px;
+    max-height: 2736px;
   }
 
   #about-container{
