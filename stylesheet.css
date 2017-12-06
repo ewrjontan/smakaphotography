@@ -278,11 +278,14 @@ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 
 #home-container-two{
   width: 100%;
+  max-width: 1000px;
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
   position: relative;
   background-color: white;
   top: 37px;
+  margin: auto;
 }
 
 #about-image-container{
