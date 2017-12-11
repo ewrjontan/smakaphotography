@@ -214,7 +214,6 @@ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
   background-color:rgba(255,255,255, .7);
   margin: auto;
   min-width: 600px;
-  max-width: 1000px;
   width: 75%;
   position: absolute;
   top: 0;
@@ -279,14 +278,11 @@ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 
 #home-container-two{
   width: 100%;
-  max-width: 1000px;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
   position: relative;
   background-color: white;
   top: 37px;
-  margin: auto;
 }
 
 #about-image-container{
@@ -296,8 +292,7 @@ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 }
 
 #about-image{
-  max-width: 304px;
-  max-height: 456px;
+  width: 80%;
   height: 80%;
   border-radius: 25px;
   position: absolute;
@@ -306,24 +301,8 @@ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
   left: 0;
   right: 0;
   margin: auto;
-  /*background-image: url("https://i.imgur.com/I2g3fBO.jpg");
-  background-repeat: no-repeat;
-  background-position:center;
-  background-size: contain;*/
-}
-
-/*#about-image{
-  width: 90%;
-  //height: 80%;
-  border-radius: 25px;
-  position: absolute;
-  top: 0;
-  bottom: 35px;
-  left: 0;
-  right: 0;
-  margin: auto;
   //z-index: 2;
-}*/
+}
 
 #about-container{
   width: 50%;
@@ -512,6 +491,7 @@ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 #packages-main-container{
   position: relative;
   width: 75%;
+  max-width: 800px;
   height: 100%;
   background-color:rgba(255,255,255, .7);
   top: 100px;
@@ -581,6 +561,7 @@ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
   background-color: none;
   padding-bottom: 50px;
   padding-top: 140px;
+  max-width: 800px;
 }
 
 /*xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
@@ -621,7 +602,6 @@ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
   #about-image-container{
     width: 100%;
     position: relative;
-    background-color: white;
   }
 
   #about-image{
@@ -629,8 +609,6 @@ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
     height: 100%;
     border-radius: 0;
     position: relative;
-    max-width: 912px;
-    max-height: 1368px;
   }
 
   #about-container{
@@ -681,6 +659,10 @@ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
     text-align: left;
     //list-style-position: inside;
   }
+  
+  #fine-print-container-one{
+    width:90%;
+  }
 
 }
 
@@ -725,6 +707,7 @@ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
   #home-container-one{
     top: 40px;
   }
+
 }
 
 @media only screen and (max-device-width : 667px) and (orientation : landscape){}
