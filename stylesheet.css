@@ -211,7 +211,7 @@ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 }
 
 #capture-the-moment-container{
-  background-color:rgba(255,255,255, .7);
+  background-color:rgba(255,255,255, .85);
   margin: auto;
   min-width: 600px;
   width: 75%;
@@ -284,6 +284,8 @@ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
   position: relative;
   background-color: white;
   top: 37px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 #about-image-container{
