@@ -1,90 +1,103 @@
-<body> <!--remove for final-->
-  
-  <div id="logo-container">
-    <!--<a id="logo-link-container" href="#"><img id="logo" src="https://i.imgur.com/Wm4dA8H.png"/></a>-->
-    <a id="logo-link-container" href="index.html"><img id="logo" src="https://i.imgur.com/DKJWzCl.png"/></a>
-  </div>
-  
-  <div id="navigation">
-    <div id="nav-container-mobile">
-      <div class="mobile-header-placeholder">
-        <i class="fa fa-bars fa-2x" id="mobile-nav-button" aria-hidden="true"></i>
-      </div>  
-      <a href="index.html" id="mobile-nav-header">S.Maka Photography</a>
-      <div class="mobile-header-placeholder"></div>
-      <!--<a id="logo-small-mobile" href="#"><img class="logo-small" src="https://i.imgur.com/Wm4dA8H.png"/></a>-->
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <title>SMaka Photography</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+    <script src="https://use.fontawesome.com/a037c8550a.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="javascript.js"></script>
+  </head>  
+
+  <body> <!--remove for final-->
+
+    <div id="logo-container">
+      <!--<a id="logo-link-container" href="#"><img id="logo" src="https://i.imgur.com/Wm4dA8H.png"/></a>-->
+      <a id="logo-link-container" href="index.html"><img id="logo" src="https://i.imgur.com/DKJWzCl.png"/></a>
     </div>
-    
-    <div id="nav-list">
-      <a class="nav-item" id="logo-small-desktop" href="index.html"><img class="logo-small" src="https://i.imgur.com/Wm4dA8H.png"/></a>
-      <a class="nav-item" href="index.html">Home</a>
-      <a class="nav-item" href="portfolio.html">Portfolio</a>
-      <a class="nav-item" href="contact.html">Contact</a>
-      <a class="nav-item" href="pricing.html">Pricing</a>
-      <a class="nav-item" href="book.html">Book Now</a>
-    </div>
-  </div>
-  
-  <div id="mobile-menu-container">
-    <ul id="mobile-menu-item-container">
-      <a href="index.html"><li class="mobile-menu-item">Home</li></a>
-      <a href="portfolio.html"><li class="mobile-menu-item">Portfolio</li></a>
-      <a href="pricing.html"><li class="mobile-menu-item">Pricing</li></a>
-      <a href="book.html"><li class="mobile-menu-item">Book Now</li></a>
-      <a href="contact.html"><li class="mobile-menu-item" id="contact-mobile-item">Contact</li></a>
-    </ul>
-  </div>
-  
-  <div id="contact-container-one">
-    
-    <div id="contact-main-container">
-      <div id="contact-header-container">
-        <div class="HeaderLine" id="header-line-contact"></div>
-        <div id="contact-header">Contact</div>
-        <div class="HeaderLine" id="header-line-contact"></div>
+
+    <div id="navigation">
+      <div id="nav-container-mobile">
+        <div class="mobile-header-placeholder">
+          <i class="fa fa-bars fa-2x" id="mobile-nav-button" aria-hidden="true"></i>
+        </div>  
+        <a href="index.html" id="mobile-nav-header">S.Maka Photography</a>
+        <div class="mobile-header-placeholder"></div>
+        <!--<a id="logo-small-mobile" href="#"><img class="logo-small" src="https://i.imgur.com/Wm4dA8H.png"/></a>-->
       </div>
-      
-      <div id="form-messages"></div>
-      
-      <form id="ajax-contact" method="post" action="mailer.php">
-      
-        <div class="FormInput FormInputFlex" id="name-input-flex">
-            <!--<label for="name">Name:</label>-->
-            <input type="text" class="InputBox" id="first-name" name="first-name" placeholder="First Name" required>
-            <!--<label for="name">Name:</label>-->
-            <input type="text"  class="InputBox" id="last-name" name="last-name" placeholder="Last Name" required>
-        </div>
 
-        <div class="FormInput FormInputFlex" id="contact-input-flex">
-            <!--<label for="email">Email:</label>-->
-            <input type="email"  class="InputBox" id="email" name="email" placeholder="E-mail Address" required>
-            <!--<label for="email">Email:</label>-->
-            <input type="text"  class="InputBox" id="phone" name="phone" placeholder="Contact Number" required>
-        </div>
-
-        <div class="FormInput">
-            <!--<label for="message">Message:</label>-->
-            <textarea id="message" name="message" placeholder="Enter Message" required></textarea>
-        </div>
-
-        <div class="FormInput">
-            <input type="submit" name="submit" value="Send" id="submit-button" />
-        </div>
-      </form>
-      
+      <div id="nav-list">
+        <a class="nav-item" id="logo-small-desktop" href="index.html"><img class="logo-small" src="https://i.imgur.com/Wm4dA8H.png"/></a>
+        <a class="nav-item" href="index.html">Home</a>
+        <a class="nav-item" href="portfolio.html">Portfolio</a>
+        <a class="nav-item" href="contact.html">Contact</a>
+        <a class="nav-item" href="pricing.html">Pricing</a>
+        <a class="nav-item" href="book.html">Book Now</a>
+      </div>
     </div>
-   
-  </div>
-  
-  
-  
-</body>
-  
-<footer>
-  <div id="social-container">
-    <a href=#><i class="fa fa-facebook fa-2x" aria-hidden="true"></i></a>
-    <a href=#><i class="fa fa-twitter fa-2x" aria-hidden="true"></i></a>
-  </div>
-  
-  <div id="copyright-text">&copy; 2017 Samantha Maka Photography</div>
-</footer>
+
+    <div id="mobile-menu-container">
+      <ul id="mobile-menu-item-container">
+        <a href="index.html"><li class="mobile-menu-item">Home</li></a>
+        <a href="portfolio.html"><li class="mobile-menu-item">Portfolio</li></a>
+        <a href="pricing.html"><li class="mobile-menu-item">Pricing</li></a>
+        <a href="book.html"><li class="mobile-menu-item">Book Now</li></a>
+        <a href="contact.html"><li class="mobile-menu-item" id="contact-mobile-item">Contact</li></a>
+      </ul>
+    </div>
+
+    <div id="contact-container-one">
+
+      <div id="contact-main-container">
+        <div id="contact-header-container">
+          <div class="HeaderLine" id="header-line-contact"></div>
+          <div id="contact-header">Contact</div>
+          <div class="HeaderLine" id="header-line-contact"></div>
+        </div>
+
+        <div id="form-messages"></div>
+
+        <form id="ajax-contact" method="post" action="mailer.php">
+
+          <div class="FormInput FormInputFlex" id="name-input-flex">
+              <!--<label for="name">Name:</label>-->
+              <input type="text" class="InputBox" id="first-name" name="first-name" placeholder="First Name" required>
+              <!--<label for="name">Name:</label>-->
+              <input type="text"  class="InputBox" id="last-name" name="last-name" placeholder="Last Name" required>
+          </div>
+
+          <div class="FormInput FormInputFlex" id="contact-input-flex">
+              <!--<label for="email">Email:</label>-->
+              <input type="email"  class="InputBox" id="email" name="email" placeholder="E-mail Address" required>
+              <!--<label for="email">Email:</label>-->
+              <input type="text"  class="InputBox" id="phone" name="phone" placeholder="Contact Number" required>
+          </div>
+
+          <div class="FormInput">
+              <!--<label for="message">Message:</label>-->
+              <textarea id="message" name="message" placeholder="Enter Message" required></textarea>
+          </div>
+
+          <div class="FormInput">
+              <input type="submit" name="submit" value="Send" id="submit-button" />
+          </div>
+        </form>
+
+      </div>
+
+    </div>
+
+
+
+  </body>
+
+  <footer>
+    <div id="social-container">
+      <a href=#><i class="fa fa-facebook fa-2x" aria-hidden="true"></i></a>
+      <a href=#><i class="fa fa-twitter fa-2x" aria-hidden="true"></i></a>
+    </div>
+
+    <div id="copyright-text">&copy; 2017 Samantha Maka Photography</div>
+  </footer>
+
+</html>
