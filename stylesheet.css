@@ -667,8 +667,6 @@ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
   margin-bottom: 25px;
 }
 
-
-
 #submit-button{
   width: 200px;
   height: 50px;
@@ -681,8 +679,120 @@ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
   color: white;
 }
 
+/*xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Schedule
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx*/
+
+#schedule-container-one{
+  width: 100%;
+  //width: 500px;
+  background-image: url("https://i.imgur.com/gMGRUsl.jpg");
+  background-repeat: no-repeat;
+  background-position:center;
+  background-size: cover;
+  position: relative;
+  top: 0;
+  padding-bottom: 200px;
+}
+
+#schedule-main-container{
+  position: relative;
+  width: 75%;
+  max-width: 800px;
+  /*height: 875px;*/
+  background-color:rgba(255,255,255, .7);
+  top: 100px;
+  bottom: 0;
+  left:0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+#schedule-header-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: center; 
+  padding-top: 75px;
+  padding-bottom: 25px;
+  position: relative;
+  background-color: none;
+}
+
+#header-line-schedule{
+  position: relative;
+  top: 25px;
+}
+
+#schedule-header{
+  font-family: "Great Vibes";
+  color: #cca300;
+  font-size: 3em; 
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+#calendar{
+  width: 90%;
+  max-width: 700px;
+  height: 400px;
+  /*max-height: 400px;*/
+  border-width: 0;
+  position: relative;
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+#schedule-text{
+  width: 90%;
+  text-align: left;
+  margin: auto;
+  position: relative;
+}
+
+#contact-button-container{
+  width: 100%;
+  background-color: none;
+  padding-top: 25px;
+  padding-bottom: 75px;
+}
+
+#contact-button{
+  width: 225px;
+  height: 50px;
+  text-align: center;
+  margin: auto;
+  position: relative;
+  top: 0px;
+  cursor: pointer;
+  font-size: 1.5em;  
+  /*color: black;
+  background-color: transparent;
+  border: 2px solid black;*/
+  color: #cca300;
+  background-color: transparent;
+  border: 2px solid #cca300;
+  display: block;
+}
+
+body.HasHover #contact-button:hover{
+  text-decoration: none;
+  background-color: #cca300;
+  color: white;
+}
 
 
+#contact-button-text{
+  position: absolute;
+  top: -12px;
+  bottom: 0;
+  left:0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  
+}
 /*xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx*/
 /*xxxxxxxxxxxxxxxxxxx responsive design xxxxxxxxxxxxxxxxxxxxxx*/
@@ -795,6 +905,15 @@ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
   
   #email{
     margin-bottom: 25px;
+  }
+  
+  #schedule-container-one{
+    /*height: 825px;*/
+  }
+  
+  #schedule-main-container{
+    width: 90%;
+    /*height: 660px;*/
   }
 
 }
