@@ -480,21 +480,13 @@ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
   position: relative;
   //height: 500px;
   top: 0;
+  padding-bottom: 85px;
 }
-
-/*#pricing-background-image-container{
-  width: 100%;
-}
-
-#pricing-background-image{
-  width: 100%;
-}*/
 
 #packages-main-container{
   position: relative;
   width: 75%;
   max-width: 800px;
-  height: 100%;
   background-color:rgba(255,255,255, .7);
   top: 100px;
   bottom: 0;
@@ -503,14 +495,18 @@ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
   margin-left: auto;
   margin-right: auto;
   text-align: center;
+  padding-bottom: 60px;
 }
 
 #pricing-header-container{
   display: flex;
   flex-direction: row;
   justify-content: center; 
-  padding-top: 50px;
+  padding-top: 75px;
+  padding-bottom: 25px;
+  position: relative;
 }
+
 #header-line-packages{
   position: relative;
   top: 25px;
@@ -522,6 +518,14 @@ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
   font-size: 3em; 
   padding-left: 15px;
   padding-right: 15px;
+}
+
+.package-container{
+  background-color: none;
+  width: 90%;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .PackageHeader{
@@ -538,19 +542,18 @@ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
   //width: 90%;
 }
 
-.package-container{
-  background-color: none;
-  margin-top: 50px;
-  margin-bottom: 50px;
-  width: 90%;
-  margin-left: auto;
-  margin-right: auto;
+#package-one{
+  padding-top: 75px;
+}
+
+#package-two{
+  padding-top: 50px;
 }
 
 #package-extras-container{
   background-color: none;
-  //margin-top: 50px;
-  margin-bottom: 50px;
+  padding-top: 15px;
+  /*padding-bottom: 60px;*/
   margin-left: auto;
   margin-right: auto;
   width: 90%;
@@ -561,9 +564,9 @@ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
   width: 75%;
   margin: auto;
   background-color: none;
-  padding-bottom: 50px;
-  padding-top: 140px;
   max-width: 800px;
+  position: relative;
+  margin-top: 150px;
 }
 
 /*xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
