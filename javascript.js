@@ -1,5 +1,3 @@
-var $tempCount = 0;
-
 // Contact form submission
 $(function() {
   // Get the form.
@@ -92,9 +90,7 @@ $(document).ready(function(){
   //check window size
   $(window).resize(function() {
   	// This will fire each time the window is resized:
-    $tempCount++;
-    console.log("Temp Count: " + $tempCount);
-	  
+  
     console.log($(window).width());
    	$portrait = window.matchMedia("(orientation: portrait)").matches;
     $landscape = window.matchMedia("(orientation: landscape)").matches;
