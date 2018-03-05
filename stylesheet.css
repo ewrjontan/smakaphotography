@@ -583,7 +583,7 @@ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 
 #contact-container-one{
   width: 100%;
-  background-image: url(".images/IMG_0023.jpg");
+  background-image: url("./images/IMG_0023.jpg");
   background-repeat: no-repeat;
   background-position:center;
   background-size: cover;
@@ -727,7 +727,7 @@ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 #schedule-container-one{
   width: 100%;
   //width: 500px;
-  background-image: url(".images/IMG_0013.jpg");
+  background-image: url("./images/IMG_0013.jpg");
   background-repeat: no-repeat;
   background-position:center;
   background-size: cover;
