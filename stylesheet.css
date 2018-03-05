@@ -729,7 +729,9 @@ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 
 #schedule-container-one{
   width: 100%;
-  background-image: url("./images/IMG_0013.jpg");
+  /*background-image: url("./images/IMG_0013.jpg");*/
+  background-image: url("https://i.imgur.com/gMGRUsl.jpg");	
+	
   background-repeat: no-repeat;
   background-position:center;
   -webkit-background-size: cover;
@@ -738,6 +740,7 @@ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
   top: 0;
   padding-bottom: 200px;
 }
+
 
 #schedule-main-container{
   position: relative;
