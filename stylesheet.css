@@ -377,6 +377,7 @@ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
   background-repeat: no-repeat;
   background-position:center;
   background-size: cover;
+  -webkit-background-size: cover;
 }
 
 #portfolio-image-one{
@@ -487,6 +488,7 @@ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
   background-image: url("https://i.imgur.com/gMGRUsl.jpg");
   background-repeat: no-repeat;
   background-position:center;
+  -webkit-background-size: cover;
   background-size: cover;
   position: relative;
   top: 0;
@@ -586,6 +588,7 @@ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
   background-image: url("./images/IMG_0023.jpg");
   background-repeat: no-repeat;
   background-position:center;
+  -webkit-background-size: cover;
   background-size: cover;
   position: relative;
   top: 0;
@@ -726,10 +729,10 @@ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 
 #schedule-container-one{
   width: 100%;
-  //width: 500px;
   background-image: url("./images/IMG_0013.jpg");
   background-repeat: no-repeat;
   background-position:center;
+  -webkit-background-size: cover;
   background-size: cover;
   position: relative;
   top: 0;
