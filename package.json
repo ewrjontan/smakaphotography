@@ -1,0 +1,29 @@
+{
+  "name": "smakaphotography",
+  "version": "1.0.0",
+  "description": "Portfolio site for Samantha Maka Photography",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lite": "lite-server",
+    "start": "npm run lite"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ewrjontan/smakaphotography.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ewrjontan/smakaphotography/issues"
+  },
+  "homepage": "https://github.com/ewrjontan/smakaphotography#readme",
+  "devDependencies": {
+    "lite-server": "^2.6.1"
+  },
+  "dependencies": {
+    "bootstrap": "^4.5.2",
+    "jquery": "^3.5.1",
+    "popper.js": "^1.16.1"
+  }
+}
