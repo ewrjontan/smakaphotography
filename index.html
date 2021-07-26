@@ -7,18 +7,56 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" type="text/css" href="stylesheet.css">
-    <script src="https://use.fontawesome.com/a037c8550a.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="javascript.js"></script>
+    
+    <script defer src="node_modules/@fortawesome/fontawesome-free/js/all.js"></script>
+
+    <!--<script src="https://use.fontawesome.com/a037c8550a.js"></script>-->
+    <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="javascript.js"></script>-->
   </head>
   
   <body>
     
-    <div id="logo-container">
+    <header class="jumbotron jumbotron-fluid bg-white">
+      <div class="container">
+          <div class="row">
+              <div class="mx-auto align-self-center">
+                  <a class="mx-auto align-self-center" href="index.html">
+                      <img src="images/logo.png" class="img-fluid"/>
+                  </a>   
+              </div>
+              <!--<div class="col-md-4 col-xl-2 mt-4">
+                  <a class="btn text-white btn-info btn-lg text-nowrap" id="reserveButton">Reserve Campsite</a>
+              </div>-->
+          </div>
+      </div>
+    </header>
+
+    <!--<div id="logo-container">
       <a id="logo-link-container" href="index.html"><img id="logo" src="https://i.imgur.com/DKJWzCl.png"/></a>
-    </div>
+    </div>-->
     
-    <div id="navigation">
+    <nav class="navbar navbar-expand-sm navbar-light sticky-top">
+      <div class="container">
+          <!--<a class="navbar-brand" href="#"><img src="images/logo.png" height="50" width="50"/></a>-->
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#smakaNavbar">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="smakaNavbar">
+              <ul class="navbar-nav mx-auto">
+                  <li class="nav-item text-center active"><a class="nav-link" href="#"><i class="fa fa-home fa-lg"> </i> Home</a></li>
+                  <li class="nav-item text-center"><a class="nav-link" href="portfolio.html"><i class="fa fa-info fa-lg"> </i> Portfolio</a></li>
+                  <li class="nav-item text-center"><a class="nav-link" href="pricing.html"><i class="fa fa-list fa-lg"> </i> Pricing</a></li>
+                  <li class="nav-item text-center"><a class="nav-link" href="schedule.html"><i class="fa fa-list fa-lg"> </i> Schedule</a></li>
+                  <li class="nav-item text-center"><a class="nav-link" href="contact.html"><i class="fa fa-address-card fa-lg"> </i> Contact</a></li>
+              </ul>
+
+          </div>
+      </div>
+    </nav>
+
+    <!--<div id="navigation">
       <div id="nav-container-mobile">
         <div class="mobile-header-placeholder">
           <i class="fa fa-bars fa-2x" id="mobile-nav-button" aria-hidden="true"></i>
@@ -45,27 +83,33 @@
         <a href="schedule.html"><li class="mobile-menu-item">Schedule</li></a>
         <a href="contact.html"><li class="mobile-menu-item" id="contact-mobile-item">Contact</li></a>
       </ul>
-    </div>
+    </div>-->
     
-    <div id="home-container-one">
-      <div id="home-container-one-image">
-        <img id=home-image-one src="./images/collage2.png"/>
+    <div class="container-fluid" id="home-container-one">
+      <div class="row">
+        <img class="col px-0" id=home-image-one src="images/collage2.png"/>
+
+        <div class="col mx-auto bg-white py-5" id="ctm-header-container">
+          <h1 class="text-center" id="ctm-header">Capturing the Moment</h1>
+          <p>
+            The happiest moments in life can flash by in the blink of an eye, often missed. Why not capture the moment so you can cherish those times forever. 
+          </p>
+        </div>
       </div>
       
-      <div id="capture-the-moment-container">
-        <div id="ctm-header-container">
+      <!--<div class="row" id="capture-the-moment-container">
+        <div class="col-6 mx-auto bg-white" id="ctm-header-container">
           <div class="HeaderLine" id="header-line-ctm"></div>
           <div id="ctm-header">Capturing the Moment</div>
           <div class="HeaderLine" id="header-line-ctm"></div>
-        </div>
+          <p id="ctm-paragraph">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin at feugiat dolor, vitae ornare ex. Donec sit amet ipsum ultrices, venenatis diam in, sagittis libero. Donec sit amet pellentesque turpis. 
+          </p>
+        </div>-->
         
-        <p id="ctm-paragraph">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin at feugiat dolor, vitae ornare ex. Donec sit amet ipsum ultrices, venenatis diam in, sagittis libero. Donec sit amet pellentesque turpis. 
-        </p>
-      </div>
-    </div>  
+      </div>  
     
-    <div id="home-container-two">
+    <!--<div id="home-container-two">
       <div id="about-image-container">
         <img id="about-image" src="./images/aboutimg.JPG"/>
       </div>
@@ -81,7 +125,7 @@
           Lorem ipsum dolor sit amet, his ne quem nibh tacimates, eos id dictas legimus probatus, an pro quem aeque corrumpit. Has quot praesent sententiae no. Sed dolor temporibus cu, ut est wisi dicam necessitatibus, delectus adipisci per an. Alii copiosae in vis. Ius eu verear luptatum. Enim possit vix te.
         </p>
       </div>
-    </div>  
+    </div>  -->
     
     <footer>
       <div id="social-container">
