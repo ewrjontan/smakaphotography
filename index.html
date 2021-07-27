@@ -16,29 +16,49 @@
   </head>
   
   <body>
-    
-    <header class="jumbotron jumbotron-fluid bg-white">
+    <nav class="navbar navbar-expand-sm navbar-light sticky-top">
       <div class="container">
-          <div class="row">
-              <div class="mx-auto align-self-center">
-                  <a class="mx-auto align-self-center" href="index.html">
-                      <img src="images/logo.png" class="img-fluid"/>
-                  </a>   
-              </div>
-              <!--<div class="col-md-4 col-xl-2 mt-4">
-                  <a class="btn text-white btn-info btn-lg text-nowrap" id="reserveButton">Reserve Campsite</a>
-              </div>-->
+          <!--<a class="navbar-brand" href="#"><img src="images/logo.png" height="50" width="50"/></a>-->
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#smakaNavbar">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="smakaNavbar">
+              <ul class="navbar-nav mx-auto">
+                  <li class="nav-item text-center active"><a class="nav-link" href="#">Home</a></li>
+                  <li class="nav-item text-center"><a class="nav-link" href="portfolio.html">Portfolio</a></li>
+                  <li class="nav-item text-center"><a class="nav-link" href="pricing.html">Pricing</a></li>
+                  <li class="nav-item text-center"><a class="nav-link" href="schedule.html">Schedule</a></li>
+                  <li class="nav-item text-center"><a class="nav-link" href="contact.html">Contact</a></li>
+              </ul>
+
           </div>
       </div>
-    </header>
+    </nav>
 
+    <header class="jumbotron bg-white">
+      <div class="text-center" id="index-down-chevron">
+        <a href=#chevronTarget><i class="fas fa-chevron-down fa-2x"aria-hidden="true"></i></a>
+      </div>
+
+      <div class="row">
+          <div class="col mt-5 pt-5 d-flex justify-content-center">
+              <a class="mx-auto" href="index.html">
+                  <img src="images/logo.png" class="img-fluid"/>
+              </a>   
+          </div>
+          <!--<div class="col-md-4 col-xl-2 mt-4">
+              <a class="btn text-white btn-info btn-lg text-nowrap" id="reserveButton">Reserve Campsite</a>
+          </div>-->
+      </div>
+
+    </header>
     <!--<div id="logo-container">
       <a id="logo-link-container" href="index.html"><img id="logo" src="https://i.imgur.com/DKJWzCl.png"/></a>
     </div>-->
     
-    <nav class="navbar navbar-expand-sm navbar-light sticky-top">
+    <!--<nav class="navbar navbar-expand-sm navbar-light sticky-top">
       <div class="container">
-          <!--<a class="navbar-brand" href="#"><img src="images/logo.png" height="50" width="50"/></a>-->
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#smakaNavbar">
               <span class="navbar-toggler-icon"></span>
           </button>
@@ -54,7 +74,7 @@
 
           </div>
       </div>
-    </nav>
+    </nav>-->
 
     <!--<div id="navigation">
       <div id="nav-container-mobile">
@@ -84,56 +104,59 @@
         <a href="contact.html"><li class="mobile-menu-item" id="contact-mobile-item">Contact</li></a>
       </ul>
     </div>-->
-    
-    <div class="container-fluid" id="home-container-one">
+    <div id="chevronTarget"></div>
+
+    <div class="container-fluid d-none d-md-block" id="index-collage-bg-desktop">
+      <div class="row h-100">
+        <div class="col-md-8 col-lg-5 mx-auto bg-white my-auto rounded">
+          <h1 class="text-center index-header py-5 h1-desktop">Capturing the Moment</h1>
+          <p class="px-5 pb-5">
+            Lorem ipsum dolor sit amet, his ne quem nibh tacimates, eos id dictas legimus probatus, an pro quem aeque corrumpit. Has quot praesent sententiae no. Sed dolor temporibus cu, ut est wisi dicam necessitatibus, delectus adipisci per an. Alii copiosae in vis. Ius eu verear luptatum. Enim possit vix te. 
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid d-md-none" id="home-container-one">
       <div class="row">
         <img class="col px-0" id=home-image-one src="images/collage2.png"/>
 
-        <div class="col mx-auto bg-white py-5" id="ctm-header-container">
-          <h1 class="text-center" id="ctm-header">Capturing the Moment</h1>
+        <div class="col mx-auto bg-white py-5">
+          <h1 class="text-center index-header">Capturing the Moment</h1>
           <p>
             The happiest moments in life can flash by in the blink of an eye, often missed. Why not capture the moment so you can cherish those times forever. 
           </p>
         </div>
       </div>
-      
-      <!--<div class="row" id="capture-the-moment-container">
-        <div class="col-6 mx-auto bg-white" id="ctm-header-container">
-          <div class="HeaderLine" id="header-line-ctm"></div>
-          <div id="ctm-header">Capturing the Moment</div>
-          <div class="HeaderLine" id="header-line-ctm"></div>
-          <p id="ctm-paragraph">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin at feugiat dolor, vitae ornare ex. Donec sit amet ipsum ultrices, venenatis diam in, sagittis libero. Donec sit amet pellentesque turpis. 
+        
+    </div>  
+    
+    <div class="container-fluid" id="home-container-two">
+      <div class="row h-100">
+
+        <img class="col col-lg-6 px-0" id="about-image" src="images/aboutimg.JPG"/>
+        
+        <div class="col col-lg-6 mx-auto bg-white py-5 my-auto">
+          <h1 class="text-center index-header h1-desktop d-none d-md-block">About Me</h1>
+          <h1 class="text-center index-header d-md-none">About Me</h1>
+
+          <p class="mx-auto col col-md-10">
+            Lorem ipsum dolor sit amet, his ne quem nibh tacimates, eos id dictas legimus probatus, an pro quem aeque corrumpit. Has quot praesent sententiae no. Sed dolor temporibus cu, ut est wisi dicam necessitatibus, delectus adipisci per an. Alii copiosae in vis. Ius eu verear luptatum. Enim possit vix te.
           </p>
-        </div>-->
-        
-      </div>  
-    
-    <!--<div id="home-container-two">
-      <div id="about-image-container">
-        <img id="about-image" src="./images/aboutimg.JPG"/>
-      </div>
-      
-      <div id="about-container">
-        <div id="about-header-container">
-          <div class="HeaderLine" id="header-line-about"></div>
-          <div id="about-header">About Me</div>
-          <div class="HeaderLine" id="header-line-about"></div>
         </div>
-        
-        <p id="about-text">
-          Lorem ipsum dolor sit amet, his ne quem nibh tacimates, eos id dictas legimus probatus, an pro quem aeque corrumpit. Has quot praesent sententiae no. Sed dolor temporibus cu, ut est wisi dicam necessitatibus, delectus adipisci per an. Alii copiosae in vis. Ius eu verear luptatum. Enim possit vix te.
-        </p>
-      </div>
-    </div>  -->
+      </div>  
+    </div>
+      
     
-    <footer>
-      <div id="social-container">
-        <a href=#><i class="fa fa-facebook fa-2x" aria-hidden="true"></i></a>
-        <a href=#><i class="fa fa-twitter fa-2x" aria-hidden="true"></i></a>
+    <footer class="mx-auto text-center">
+      <div class="d-flex justify-content-around w-50 mx-auto py-5" id="social-container">
+        <a href=#><i class="fab fa-facebook fa-2x" aria-hidden="true"></i></a>
+        <a href=#><i class="fab fa-twitter fa-2x" aria-hidden="true"></i></a>
+        <a href=#><i class="fab fa-flickr fa-2x" aria-hidden="true"></i></a>
+        <a href=#><i class="fab fa-instagram-square fa-2x" aria-hidden="true"></i></a>
       </div>
       
-      <div id="copyright-text">&copy; 2017 Samantha Maka Photography</div>
+      <div class="pb-5" id="copyright-text">&copy; 2021 Samantha Maka Photography</div>
     </footer>
 
     <!-- jQuery must come first, then Popper.js, then the Bootstrap JavaScript plugins.-->
