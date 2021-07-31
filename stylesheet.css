@@ -27,6 +27,13 @@ a, a:hover {
   height: 100vh;
 }
 
+.logo{
+  width:100%;
+  max-width: 250px;
+  height: auto;  
+
+}
+
 #index-collage-bg-desktop{
   background-image: url("images/collage2.png"); 
   height: 1000px;
@@ -48,4 +55,19 @@ a, a:hover {
   position: relative;
   top: 80vh;
   color: #cca300;
+}
+
+.jumbotron-fluid {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+/*
+Portfolio.html
+*/
+
+.portfolio-image{
+  max-height: 450px;
 }

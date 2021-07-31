@@ -2,90 +2,107 @@
 <html>
   <head>
     <title>SMaka Photography</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" type="text/css" href="stylesheet.css">
-    <script src="https://use.fontawesome.com/a037c8550a.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="javascript.js"></script>
+    
+    <script defer src="node_modules/@fortawesome/fontawesome-free/js/all.js"></script>
   </head>
   
   <body>
-  
-  <div id="logo-container">
-    <a id="logo-link-container" href="index.html"><img id="logo" src="https://i.imgur.com/DKJWzCl.png"/></a>
-  </div>
-  
-  <div id="navigation">
-    <div id="nav-container-mobile">
-      <div class="mobile-header-placeholder">
-        <i class="fa fa-bars fa-2x" id="mobile-nav-button" aria-hidden="true"></i>
-      </div>  
-      <a href="index.html" id="mobile-nav-header">S.Maka Photography</a>
-      <div class="mobile-header-placeholder"></div>
+    <header class="jumbotron-fluid bg-white">
+      
+
+      <div class="row">
+          <div class="col d-flex justify-content-center">
+              <a class="mx-auto text-center" href="index.html">
+                  <img src="images/logo.png" class="img-fluid logo" alt="Responsive image"/>
+              </a>   
+          </div>
+          <!--<div class="col-md-4 col-xl-2 mt-4">
+              <a class="btn text-white btn-info btn-lg text-nowrap" id="reserveButton">Reserve Campsite</a>
+          </div>-->
+      </div>
+
+    </header>
+
+    <nav class="navbar navbar-expand-sm navbar-light sticky-top">
+      <div class="container">
+          <!--<a class="navbar-brand" href="#"><img src="images/logo.png" height="50" width="50"/></a>-->
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#smakaNavbar">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="smakaNavbar">
+              <ul class="navbar-nav mx-auto">
+                  <li class="nav-item text-center"><a class="nav-link" href="index.html">Home</a></li>
+                  <li class="nav-item text-center active"><a class="nav-link" href="#">Portfolio</a></li>
+                  <li class="nav-item text-center"><a class="nav-link" href="pricing.html">Pricing</a></li>
+                  <li class="nav-item text-center"><a class="nav-link" href="schedule.html">Schedule</a></li>
+                  <li class="nav-item text-center"><a class="nav-link" href="contact.html">Contact</a></li>
+              </ul>
+
+          </div>
+      </div>
+    </nav>
+
+    <div class="container-fluid px-0">
+      <div class="row mx-auto px-0">
+        <img src="images/IMG_0001.jpg" class="col col-md-3 px-0 img-fluid portfolio-image" alt="Responsive image"/>
+        <img src="images/IMG_0002.jpg" class="col col-md-3 px-0 img-fluid portfolio-image" alt="Responsive image"/>
+        <img src="images/IMG_0003.jpg" class="col col-md-3 px-0 img-fluid portfolio-image" alt="Responsive image"/>
+        <img src="images/IMG_0004.jpg" class="col col-md-3 px-0 img-fluid portfolio-image" alt="Responsive image"/>
+      </div>
+
+      <div class="row mx-auto px-0">
+        <img src="images/IMG_0005.jpg" class="col col-md-3 px-0 img-fluid portfolio-image" alt="Responsive image"/>
+        <img src="images/IMG_0007.jpg" class="col col-md-3 px-0 img-fluid portfolio-image" alt="Responsive image"/>
+        <img src="images/IMG_0008.jpg" class="col col-md-3 px-0 img-fluid portfolio-image" alt="Responsive image"/>
+        <img src="images/IMG_0009.jpg" class="col col-md-3 px-0 img-fluid portfolio-image" alt="Responsive image"/>
+      </div>
+
+      <div class="row mx-auto px-0">
+        <img src="images/IMG_0010.jpg" class="col col-md-3 px-0 img-fluid portfolio-image" alt="Responsive image"/>
+        <img src="images/IMG_0011.jpg" class="col col-md-3 px-0 img-fluid portfolio-image" alt="Responsive image"/>
+        <img src="images/IMG_0012.jpg" class="col col-md-3 px-0 img-fluid portfolio-image" alt="Responsive image"/>
+        <img src="images/IMG_0013.jpg" class="col col-md-3 px-0 img-fluid portfolio-image" alt="Responsive image"/>
+      </div>
+
+      <div class="row mx-auto px-0">
+        <img src="images/IMG_0014.jpg" class="col col-md-3 px-0 img-fluid portfolio-image" alt="Responsive image"/>
+        <img src="images/IMG_0023.jpg" class="col col-md-3 px-0 img-fluid portfolio-image" alt="Responsive image"/>
+        <img src="images/IMG_0016.jpg" class="col col-md-3 px-0 img-fluid portfolio-image" alt="Responsive image"/>
+        <img src="images/IMG_0024.jpg" class="col col-md-3 px-0 img-fluid portfolio-image" alt="Responsive image"/>
+      </div>
+
+      <div class="row mx-auto px-0">
+        <img src="images/IMG_0019.jpg" class="col col-md-3 px-0 img-fluid portfolio-image" alt="Responsive image"/>
+        <img src="images/IMG_0020.jpg" class="col col-md-3 px-0 img-fluid portfolio-image" alt="Responsive image"/>
+        <img src="images/IMG_0021.jpg" class="col col-md-3 px-0 img-fluid portfolio-image" alt="Responsive image"/>
+        <img src="images/IMG_0022.jpg" class="col col-md-3 px-0 img-fluid portfolio-image" alt="Responsive image"/>
+      </div>
+ 
+      
     </div>
-    
-    <div id="nav-list">
-      <a class="nav-item" id="logo-small-desktop" href="index.html"><img class="logo-small" src="https://i.imgur.com/Wm4dA8H.png"/></a>
-      <a class="nav-item" href="index.html">Home</a>
-      <a class="nav-item" href="portfolio.html">Portfolio</a>
-      <a class="nav-item" href="contact.html">Contact</a>
-      <a class="nav-item" href="pricing.html">Pricing</a>
-      <a class="nav-item" href="schedule.html">Schedule</a>
-    </div>
-  </div>
   
-  <div id="mobile-menu-container">
-    <ul id="mobile-menu-item-container">
-      <a href="index.html"><li class="mobile-menu-item">Home</li></a>
-      <a href="portfolio.html"><li class="mobile-menu-item">Portfolio</li></a>
-      <a href="pricing.html"><li class="mobile-menu-item">Pricing</li></a>
-      <a href="schedule.html"><li class="mobile-menu-item">Schedule</li></a>
-      <a href="contact.html"><li class="mobile-menu-item" id="contact-mobile-item">Contact</li></a>
-    </ul>
-  </div>
+    <footer class="mx-auto text-center">
+      <div class="d-flex justify-content-around w-50 mx-auto py-5" id="social-container">
+        <a href=#><i class="fab fa-facebook fa-2x" aria-hidden="true"></i></a>
+        <a href=#><i class="fab fa-twitter fa-2x" aria-hidden="true"></i></a>
+        <a href=#><i class="fab fa-flickr fa-2x" aria-hidden="true"></i></a>
+        <a href=#><i class="fab fa-instagram-square fa-2x" aria-hidden="true"></i></a>
+      </div>
+      
+      <div class="pb-5" id="copyright-text">&copy; 2021 Samantha Maka Photography</div>
+    </footer>
+
+    <!-- jQuery must come first, then Popper.js, then the Bootstrap JavaScript plugins.-->
+    <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
   
-  <div id="portfolio-container-one">
-    <div id="portfolio-image-flex">
-      <div class="portfolio-image" id="portfolio-image-one"></div>
-      <div class="portfolio-image" id="portfolio-image-two"></div>
-      <div class="portfolio-image" id="portfolio-image-three"></div>
-      <div class="portfolio-image" id="portfolio-image-four"></div>
-      <div class="portfolio-image" id="portfolio-image-five"></div>
-      <div class="portfolio-image" id="portfolio-image-six"></div>
-      <div class="portfolio-image" id="portfolio-image-seven"></div>
-      <div class="portfolio-image" id="portfolio-image-eight"></div>
-      <div class="portfolio-image" id="portfolio-image-nine"></div>
-      <div class="portfolio-image" id="portfolio-image-ten"></div>
-      <div class="portfolio-image" id="portfolio-image-eleven"></div>
-      <div class="portfolio-image" id="portfolio-image-twelve"></div>
-      <div class="portfolio-image" id="portfolio-image-thirteen"></div>
-      <div class="portfolio-image" id="portfolio-image-fourteen"></div>
-      <div class="portfolio-image" id="portfolio-image-fifteen"></div>
-      <div class="portfolio-image" id="portfolio-image-sixteen"></div>
-      <div class="portfolio-image" id="portfolio-image-seventeen"></div>
-      <div class="portfolio-image" id="portfolio-image-eighteen"></div>
-      <div class="portfolio-image" id="portfolio-image-nineteen"></div>
-      <div class="portfolio-image" id="portfolio-image-twenty"></div>
-      <div class="portfolio-image" id="portfolio-image-twentyone"></div>
-      <div class="portfolio-image" id="portfolio-image-twentytwo"></div>
-      <div class="portfolio-image" id="portfolio-image-twentythree"></div>
-      <div class="portfolio-image" id="portfolio-image-twentyfour"></div>
-    </div>   
-    
-  </div>
-  
-  
-  
-</body>
-  
-<footer>
-  <div id="social-container">
-    <a href=#><i class="fa fa-facebook fa-2x" aria-hidden="true"></i></a>
-    <a href=#><i class="fa fa-twitter fa-2x" aria-hidden="true"></i></a>
-  </div>
-  
-  <div id="copyright-text">&copy; 2017 Samantha Maka Photography</div>
-</footer>
-  
+  </body>
   
 </html>  
