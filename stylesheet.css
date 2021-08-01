@@ -46,7 +46,7 @@ a, a:hover {
   font-size: 5em;
 }
 
-.index-header{
+.gold-header{
   font-family: "Great Vibes";
   color: #cca300;
 }
@@ -71,3 +71,14 @@ Portfolio.html
 .portfolio-image{
   max-height: 450px;
 }
+
+/* 
+Pricing.html
+*/
+
+.card-img-top{
+  width: 50%;
+  margin: auto;
+
+}
+
