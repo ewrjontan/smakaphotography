@@ -43,6 +43,10 @@ a, a:hover {
 
 }
 
+#bookModal .modal-header {
+  background-color: #FDE8EB;
+}
+
 #index-collage-bg-desktop{
   background-image: url("images/collage2.png"); 
   height: 1000px;

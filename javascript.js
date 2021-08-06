@@ -59,119 +59,69 @@ $(function() {
     });
       
       
-      // TODO
+  });
+
+  /*index chevron*/
+  $("#index-down-chevron").on("click", function(){
+    $("html, body").animate({
+      scrollTop: $("#chevronTarget").offset().top
+      }, 800);
+
+  });
+
+  /*for book button*/
+  /*index*/
+  $("#bookButton").on("click", function(){
+      $('#bookModal').modal("show");
+  });
+  $("#bookButtonIndex").on("click", function(){
+    $('#bookModal').modal("show");
+  });
+  $("#bookButtonIndexMobile").on("click", function(){
+    $('#bookModal').modal("show");
+  });
+
+
+  /*pricing page*/
+  $("#bookPackageOne").on("click", function(){
+    $('#bookModal').modal("show");
+    $('#inputPackageSelect').val(0);
+  });
+
+  $("#bookPackageTwo").on("click", function(){
+    $('#bookModal').modal("show");
+    $('#inputPackageSelect').val(1);
+  });
+
+  $("#bookWeddingPackageOne").on("click", function(){
+    $('#bookModal').modal("show");
+    $('#inputPackageSelect').val(2);
+  });
+
+  $("#bookWeddingPackageTwo").on("click", function(){
+    $('#bookModal').modal("show");
+    $('#inputPackageSelect').val(3);
+  });
+
+  /*contact page*/
+  $("#contactSubmit").on("click", function(){
+    let firstname = $("#contactFirstName").val();
+    let lastname = $("#contactLastName").val();
+    let phone = $("#contactPhone").val();
+    let email = $("#contactEmail").val();
+    let feedback = $("#contactFeedback").val();
+    console.log(firstname, lastname, phone, email, feedback);
+
+    if (firstname !== "" && lastname !== "" && phone !== "" && email !== "" && feedback !== ""){
+      let link = `mailto:jonscardenas@gmail.com?subject=New Feedback from ${firstname} ${lastname}&body=${feedback} contact: ${phone} ${email}`;
+      console.log(link);
+      window.location = link;
+      
+    }else{
+      alert("Please fill out all forms!");
+    }
+
   });
 
 });
 
-
-
-
-
-function hasTouch() {
-    return 'ontouchstart' in document.documentElement
-           || navigator.maxTouchPoints > 0
-           || navigator.msMaxTouchPoints > 0;
-}
-
-$(document).ready(function(){
-  
-  if (!hasTouch()) {
-    $("body").addClass("HasHover");
-    //console.log("yooooo");
-	}
-  
-	var $mobileMenuOpen = false;
-  var $menuLock = false;
-  var $portrait;
-  var $landscape;
-  
-  //check window size
-  $(window).resize(function() {
-  	// This will fire each time the window is resized:
-  
-    //console.log($(window).width());
-   	$portrait = window.matchMedia("(orientation: portrait)").matches;
-    $landscape = window.matchMedia("(orientation: landscape)").matches;
-    //console.log("Portrait: " + $portrait);
-    //console.log("Landscape: " + $landscape);
-    
-    //temp fix for landscape to portrait (position media query not changing)
-    if ($portrait){
-    	$("#navigation").css({"position": "fixed", "background-color": "rgba(255, 230, 230, 0)"});
-      
-    }
-    
-    //fix for nav bar not changing color when switching between portrait and landscape
-    if ($landscape){
-    	$("#navigation").css({"position": "relative","background-color": "#ffe6e6"});
-    };
-  
-  }).resize(); // This will simulate a resize to trigger the initial run.
-  
-	$(window).scroll(function(){
-  	var $scroll = $(window).scrollTop();
-    //console.log($scroll);
-    
-    if ($scroll >= 220){
-    	$menuLock = true;
-    	//console.log("yoooo");
-      
-      //for oreintaion = landscape
-      if ($landscape){
-      	$("#navigation").css("position", "fixed");
-        $("#nav-list").css("top", "3px");
-      	$("#logo-small-desktop").css("display", "inline");
-        $("#home-container-one").css("top", "40px");
-      }else if ($portrait){
-      	$("#navigation").css("background-color", "rgba(255, 230, 230, 1)");
-      }
-      
-      //$("#mobile-nav-header").css("visibility", "visible");
-      $("#mobile-nav-header").css("opacity", "1");
-
-    }else if ($scroll<220){
-    	$menuLock = false;
-      
-      //for orientation = landscape
-      if ($landscape){
-      	$("#navigation").css("position", "relative");
-      	$("#nav-list").css("top", "10px");
-      	$("#logo-small-desktop").css("display", "none");
-        $("#home-container-one").css("top", "0px");
-      }
-    	
-      
-      if ($mobileMenuOpen == false){
-        $("#mobile-nav-header").css("opacity", "0");
-        
-        if ($portrait){
-      		$("#navigation").css("background-color", "rgba(255, 230, 230, 0)");
-      	};
-      };
-    }  
-  });
-  
-  $("#mobile-nav-button").click(function(){
-  	if ($mobileMenuOpen){
-    	$('#mobile-menu-container').slideUp('slow');
-      $("#logo-link-container").css("visibility", "visible");
-      
-      
-      if ($menuLock == false){
-      	$("#mobile-nav-header").css("opacity", "0");
-        $("#navigation").css("background-color", "rgba(255, 230, 230, 0)");
-      };
-      
-      $mobileMenuOpen = false;
-    }else{//mobile menu is closed
-    	$('#mobile-menu-container').slideDown('slow');
-      $("#logo-link-container").css("visibility", "hidden");
-      $("#mobile-nav-header").css("opacity", "1");
-      $("#navigation").css("background-color", "rgba(255, 230, 230, 1)");
-      $mobileMenuOpen = true;
-    }
-  	
-  });
-  
-})
