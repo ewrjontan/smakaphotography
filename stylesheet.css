@@ -11,6 +11,10 @@
     font-style: normal;
 }
 
+html, body{
+  font-family: Helvetica, arial;
+}
+
 .navbar {
   /*background-color: #FDE8EB;*/
   background-image: linear-gradient(#FDE8EB, white);
