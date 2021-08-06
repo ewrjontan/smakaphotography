@@ -11,8 +11,13 @@
     font-style: normal;
 }
 
-.navbar, footer {
-  background-color: #FDE8EB;
+.navbar {
+  /*background-color: #FDE8EB;*/
+  background-image: linear-gradient(#FDE8EB, white);
+}
+
+footer{
+  background-image: linear-gradient(to top, #FDE8EB, white);
 }
 
 .nav-item{
@@ -79,6 +84,8 @@ Pricing.html
 .card-img-top{
   width: 50%;
   margin: auto;
-
 }
 
+.card-footer{
+  background-color: #FDE8EB;
+}
