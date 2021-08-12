@@ -2,11 +2,11 @@
 
 @font-face{ 
     font-family: 'Great Vibes';
-    src: url('./fonts/great-vibes-font-kit/greatvibes-regular-webfont.eot');
-    src: url('./fonts/great-vibes-font-kit/greatvibes-regular-webfont?#iefix') format('embedded-opentype'),
-	 url('./fonts/great-vibes-font-kit/greatvibes-regular-webfont.woff') format('woff'),
-	 url('./fonts/great-vibes-font-kit/greatvibes-regular-webfont.ttf') format('truetype'),
-	 url('./fonts/great-vibes-font-kit/greatvibes-regular-webfont.svg#webfont') format('svg');
+    src: url('../fonts/great-vibes-font-kit/greatvibes-regular-webfont.eot');
+    src: url('../fonts/great-vibes-font-kit/greatvibes-regular-webfont?#iefix') format('embedded-opentype'),
+	 url('../fonts/great-vibes-font-kit/greatvibes-regular-webfont.woff') format('woff'),
+	 url('../fonts/great-vibes-font-kit/greatvibes-regular-webfont.ttf') format('truetype'),
+	 url('../fonts/great-vibes-font-kit/greatvibes-regular-webfont.svg#webfont') format('svg');
     font-weight: 400;
     font-style: normal;
 }
@@ -48,7 +48,7 @@ a, a:hover {
 }
 
 #index-collage-bg-desktop{
-  background-image: url("images/collage2.png"); 
+  background-image: url("../images/collage2.png"); 
   height: 1000px;
   background-position: center; 
   background-repeat: no-repeat; 
