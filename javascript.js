@@ -1,4 +1,4 @@
-// Contact form submission
+// Jquery
 $(function() {
   
   /*index chevron*/
@@ -26,9 +26,6 @@ $(function() {
       $("#bookSuccessModal").modal("show");
     });
   });
-  /*$("#bookSubmitButton").on("click", function(){
-    $('#bookSuccessModal').modal("show");
-  });*/
 
 
   /*pricing page*/
@@ -54,16 +51,17 @@ $(function() {
 
   /*contact page*/
   $("#contactSubmit").on("click", function(){
-    let firstname = $("#contactFirstName").val();
-    let lastname = $("#contactLastName").val();
-    let phone = $("#contactPhone").val();
-    let email = $("#contactEmail").val();
-    let feedback = $("#contactFeedback").val();
+
+    var firstname = $("#contactFirstName").val();
+    var lastname = $("#contactLastName").val();
+    var phone = $("#contactPhone").val();
+    var email = $("#contactEmail").val();
+    var feedback = $("#contactFeedback").val();
     console.log(firstname, lastname, phone, email, feedback);
 
     if (firstname !== "" && lastname !== "" && phone !== "" && email !== "" && feedback !== ""){
-      let link = `mailto:jonscardenas@gmail.com?subject=New Feedback from ${firstname} ${lastname}&body=${feedback} contact: ${phone} ${email}`;
-      console.log(link);
+      var link = "mailto:jonscardenas@gmail.com?subject=New Feedback from " + firstname + " " + lastname + "&body=" + feedback + " contact:" + phone + email;
+      //console.log(link);
       window.location = link;
       
     }else{

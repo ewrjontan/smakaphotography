@@ -6,7 +6,12 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "lite": "lite-server",
-    "start": "npm run lite"
+    "start": "npm run lite",
+    "copyfonts": "copyfiles -f node_modules/@fortawesome/fontawesome-free/webfonts/* dist/fonts",
+    "imagemin": "imagemin images/* -o dist/images",
+    "usemin": "usemin contact.html -d dist --htmlmin -o dist/contact.html && usemin pricing.html -d dist --htmlmin -o dist/pricing.html && usemin index.html -d dist --htmlmin -o dist/index.html && usemin schedule.html -d dist --htmlmin -o dist/schedule.html && usemin portfolio.html -d dist --htmlmin -o dist/portfolio.html",
+    "clean": "rimraf dist",
+    "build": "npm run clean && npm run imagemin && npm run copyfonts && npm run usemin"
   },
   "repository": {
     "type": "git",
@@ -19,7 +24,11 @@
   },
   "homepage": "https://github.com/ewrjontan/smakaphotography#readme",
   "devDependencies": {
-    "lite-server": "^2.6.1"
+    "copyfiles": "^2.2.0",
+    "imagemin-cli": "^5.1.0",
+    "lite-server": "^2.6.1",
+    "rimraf": "^3.0.2",
+    "usemin-cli": "^0.6.0"
   },
   "dependencies": {
     "@fortawesome/fontawesome-free": "^5.15.3",
