@@ -96,14 +96,35 @@
 
                             <div class="form-row">
                                 <button type="button" class="btn btn-secondary btn-sm ml-auto" data-dismiss="modal">Cancel</button>
-                                <button type="submit" class="btn btn-danger btn-sm ml-1">Book Session</button> 
+                                <button type="button" class="btn btn-danger btn-sm ml-1" id="bookSubmitButton" data-dismiss="modal">Book Session</button> 
                             </div>
                         </form>
                   </div>
                 </div>
             </div>
         </div>
-    </div>    
+    </div>   
+    
+    <div id="bookSuccessModal" class="modal fade" role="dialog">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content">
+              <div class="modal-header gold-header">
+                  <h1 class="modal-title">Got It</h1>
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+              </div>
+
+              <div class="modal-body">
+                  <div class="container-fluid">
+                    <p>I've received your session details and will respond within 48 hours.</p>   
+                  </div>
+              </div>
+
+              <div class="modal-footer">
+                <button type="submit" class="btn btn-danger btn-sm ml-1" id="" data-dismiss="modal">Ok</button> 
+              </div>
+          </div>
+      </div>
+    </div>
 
     <div class="container-fluid px-0">
       
